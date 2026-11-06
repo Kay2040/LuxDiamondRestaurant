@@ -1,0 +1,22 @@
+LUXDIAMOND - GIAO DIỆN HTML THUẦN (chưa có chức năng thật)
+
+CÁCH XEM
+  Nhấp đúp tệp index.html để mở bằng trình duyệt. Không cần cài đặt gì, không cần Internet.
+
+CẤU TRÚC
+  index.html, thuc-don.html, gio-hang.html, dat-ban.html, dang-nhap.html, dang-ky.html,
+  don-hang.html, ho-so.html, gioi-thieu.html, lien-he.html      Các trang khách hàng
+  admin/                                                         Các trang quản trị (bắt đầu từ admin/index.html)
+  css/style.css      Giao diện chung (màu, chữ, bố cục, nút, biểu mẫu, bảng)
+  css/admin.css      Giao diện riêng của khu quản trị
+  js/main.js         Menu điện thoại, thông báo cho nút chưa có chức năng
+  js/thuc-don.js     Lọc món theo danh mục và ô tìm kiếm
+  js/dat-ban.js      Quy trình đặt bàn 4 bước
+
+DỄ SỬA
+  - Đổi màu: mở css/style.css, sửa các biến ở đầu tệp (--forest, --gold, --terra, --cream).
+  - Đổi tên nhà hàng, địa chỉ, số điện thoại: dùng chức năng Tìm và Thay thế (Ctrl+H) trong VS Code
+    cho toàn bộ thư mục.
+  - Thêm ảnh món: tạo thư mục images, rồi trong thuc-don.html thay khối
+    <div class="dish-img dish-placeholder">...</div> bằng <img class="dish-img" src="images/ten-anh.jpg" alt="Tên món">
+  - Mọi dữ liệu (món, đơn hàng, khách hàng) hiện là dữ liệu mẫu viết thẳng trong HTML.

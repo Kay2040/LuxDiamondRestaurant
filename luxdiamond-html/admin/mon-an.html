@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Món ăn | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html" class="active">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Món ăn</h1><p>Thêm, sửa và ẩn món trong thực đơn.</p></div>
+        </div>
+
+        
+        <details class="panel">
+          <summary>Thêm món mới</summary>
+          <form class="form-card demo-form" style="margin-top: 1rem;">
+            <div class="form-grid">
+              <label class="field"><span>Tên món</span><input></label>
+              <label class="field"><span>Danh mục</span><select><option>Khai vị</option><option>Món chính</option><option>Tráng miệng</option><option>Đồ uống</option></select></label>
+              <label class="field"><span>Giá (VNĐ)</span><input type="number" min="0" step="1000"></label>
+              <label class="field"><span>Ảnh (đường dẫn)</span><input placeholder="images/ten-mon.jpg"></label>
+            </div>
+            <label class="field"><span>Mô tả</span><textarea rows="3"></textarea></label>
+            <div class="check-row"><label><input type="checkbox" checked> Đang bán</label><label><input type="checkbox"> Món nổi bật</label></div>
+            <button class="btn" type="submit">Lưu món</button>
+          </form>
+        </details>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Tên món</th><th>Danh mục</th><th>Giá</th><th>Nổi bật</th><th>Trạng thái</th><th></th></tr></thead>
+            <tbody>
+            <tr><td>Salad Caesar gà nướng</td><td>Khai vị</td><td>135.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Súp nấm kem truffle</td><td>Khai vị</td><td>125.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Bruschetta cà chua húng quế</td><td>Khai vị</td><td>115.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Bít tết thăn nội sốt tiêu xanh</td><td>Món chính</td><td>485.000 ₫</td><td>◆</td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Cá hồi áp chảo sốt bơ chanh</td><td>Món chính</td><td>395.000 ₫</td><td>◆</td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Mì Ý hải sản sốt cà chua</td><td>Món chính</td><td>265.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Sườn heo nướng BBQ</td><td>Món chính</td><td>345.000 ₫</td><td>◆</td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Risotto nấm porcini</td><td>Món chính</td><td>285.000 ₫</td><td></td><td><span class="status tone-muted">Tạm hết</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Gà nướng thảo mộc</td><td>Món chính</td><td>255.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Tiramisu cổ điển</td><td>Tráng miệng</td><td>115.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Panna cotta dâu</td><td>Tráng miệng</td><td>105.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Crème brûlée vani</td><td>Tráng miệng</td><td>110.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Vang đỏ (ly)</td><td>Đồ uống</td><td>165.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Limonade bạc hà</td><td>Đồ uống</td><td>75.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>Espresso</td><td>Đồ uống</td><td>59.000 ₫</td><td></td><td><span class="status tone-ok">Đang bán</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

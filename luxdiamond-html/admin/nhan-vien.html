@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nhân viên và phân quyền | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html" class="active">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Nhân viên và phân quyền</h1><p>Quản lý tài khoản nội bộ và quyền truy cập.</p></div>
+        <div class="admin-actions"><button class="btn btn-sm" data-demo>Thêm nhân viên</button></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Họ tên</th><th>Email</th><th>Vai trò</th><th>Trạng thái</th><th></th></tr></thead>
+            <tbody>
+            <tr><td>Quản trị viên</td><td>admin@luxdiamond.example</td><td><span class="status tone-info">Quản trị viên</span></td><td><span class="status tone-ok">Đang hoạt động</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Đổi vai trò</button><button class="btn btn-ghost btn-sm" data-demo>Khóa</button></span></td></tr>
+            <tr><td>Đặng Thanh Tùng</td><td>tung@luxdiamond.example</td><td><span class="status tone-warn">Nhân viên</span></td><td><span class="status tone-ok">Đang hoạt động</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Đổi vai trò</button><button class="btn btn-ghost btn-sm" data-demo>Khóa</button></span></td></tr>
+            <tr><td>Hoàng Mai Chi</td><td>chi@luxdiamond.example</td><td><span class="status tone-warn">Nhân viên</span></td><td><span class="status tone-ok">Đang hoạt động</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Đổi vai trò</button><button class="btn btn-ghost btn-sm" data-demo>Khóa</button></span></td></tr>
+            <tr><td>Bùi Đức Long</td><td>long@luxdiamond.example</td><td><span class="status tone-warn">Nhân viên</span></td><td><span class="status tone-muted">Đã khóa</span></td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Đổi vai trò</button><button class="btn btn-ghost btn-sm" data-demo>Khóa</button></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h3>Bảng phân quyền</h3>
+          <div class="table-wrap">
+            <table class="data-table matrix">
+              <thead><tr><th>Chức năng</th><th>Khách hàng</th><th>Nhân viên</th><th>Quản trị viên</th></tr></thead>
+              <tbody>
+              <tr><td>Xem thực đơn, đặt bàn, đặt món</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Quản lý đơn hàng, đặt bàn, bàn</td><td class="no">–</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Quản lý món ăn và danh mục</td><td class="no">–</td><td class="no">–</td><td class="yes">✓</td></tr>
+              <tr><td>Quản lý khách hàng</td><td class="no">–</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Quản lý nhân viên và phân quyền</td><td class="no">–</td><td class="no">–</td><td class="yes">✓</td></tr>
+              <tr><td>Xem doanh thu và báo cáo</td><td class="no">–</td><td class="no">–</td><td class="yes">✓</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

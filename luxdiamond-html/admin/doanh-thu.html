@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doanh thu và báo cáo | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html" class="active">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Doanh thu và báo cáo</h1><p>Thống kê theo tháng và theo danh mục món.</p></div>
+        <div class="admin-actions"><button class="btn btn-sm" data-demo>Xuất báo cáo</button></div>
+        </div>
+
+        <div class="stat-grid three">
+          <div class="stat"><span>Doanh thu tháng này</span><strong>322.000.000 ₫</strong></div>
+          <div class="stat"><span>Số đơn trong tháng</span><strong>1.184</strong></div>
+          <div class="stat"><span>Giá trị đơn trung bình</span><strong>272.000 ₫</strong></div>
+        </div>
+        <div class="admin-grid-2">
+          <div class="panel">
+            <h3>Doanh thu 6 tháng gần nhất (triệu đồng)</h3>
+            
+            <div class="bars">
+              <div class="bar-item"><em>210tr</em><div class="bar" style="height: 55%;"></div><span>T5</span></div>
+              <div class="bar-item"><em>236tr</em><div class="bar" style="height: 62%;"></div><span>T6</span></div>
+              <div class="bar-item"><em>254tr</em><div class="bar" style="height: 67%;"></div><span>T7</span></div>
+              <div class="bar-item"><em>248tr</em><div class="bar" style="height: 65%;"></div><span>T8</span></div>
+              <div class="bar-item"><em>297tr</em><div class="bar" style="height: 78%;"></div><span>T9</span></div>
+              <div class="bar-item"><em>322tr</em><div class="bar" style="height: 85%;"></div><span>T10</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Tỷ trọng theo danh mục</h3>
+            <div class="pie-box">
+              
+              <div class="pie"></div>
+              <ul class="legend-list">
+                <li><span class="dot" style="background:#131c2b"></span>Món chính 52%</li>
+                <li><span class="dot" style="background:#b9975b"></span>Khai vị 18%</li>
+                <li><span class="dot" style="background:#8f3a2b"></span>Tráng miệng 12%</li>
+                <li><span class="dot" style="background:#6b7a99"></span>Đồ uống 18%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

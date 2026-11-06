@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đơn hàng | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html" class="active">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Đơn hàng</h1><p>Theo dõi và cập nhật trạng thái đơn món.</p></div>
+        </div>
+
+        <div class="toolbar">
+          <select><option>Tất cả trạng thái</option><option>Chờ xác nhận</option><option>Đã xác nhận</option><option>Đang chế biến</option><option>Đã phục vụ</option><option>Hoàn thành</option><option>Đã hủy</option></select>
+          <input type="search" class="search" placeholder="Tìm theo mã đơn hoặc khách hàng">
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Mã đơn</th><th>Giờ</th><th>Khách hàng</th><th>Bàn</th><th>Số món</th><th>Tổng tiền</th><th>Thanh toán</th><th>Trạng thái</th><th></th></tr></thead>
+            <tbody>
+            <tr><td>OD-3041</td><td>18:42</td><td>Nguyễn Minh Anh</td><td>T05</td><td>4</td><td>1.150.000 ₫</td><td><span class="status tone-muted">Chưa thanh toán</span></td><td><span class="status tone-warn">Đang chế biến</span></td><td><button class="btn btn-ghost btn-sm" data-demo>Cập nhật</button></td></tr>
+            <tr><td>OD-3040</td><td>18:20</td><td>Trần Quốc Bảo</td><td>T02</td><td>3</td><td>745.000 ₫</td><td><span class="status tone-muted">Chưa thanh toán</span></td><td><span class="status tone-info">Đã phục vụ</span></td><td><button class="btn btn-ghost btn-sm" data-demo>Cập nhật</button></td></tr>
+            <tr><td>OD-3039</td><td>18:05</td><td>Lê Thu Hà</td><td>Mang về</td><td>2</td><td>520.000 ₫</td><td><span class="status tone-muted">Chưa thanh toán</span></td><td><span class="status tone-warn">Chờ xác nhận</span></td><td><button class="btn btn-ghost btn-sm" data-demo>Cập nhật</button></td></tr>
+            <tr><td>OD-3037</td><td>17:30</td><td>Phạm Gia Huy</td><td>T04</td><td>5</td><td>1.380.000 ₫</td><td><span class="status tone-ok">Đã thanh toán</span></td><td><span class="status tone-ok">Hoàn thành</span></td><td><button class="btn btn-ghost btn-sm" data-demo>Cập nhật</button></td></tr>
+            <tr><td>OD-3035</td><td>17:12</td><td>Võ Khánh Linh</td><td>T07</td><td>2</td><td>330.000 ₫</td><td><span class="status tone-muted">Chưa thanh toán</span></td><td><span class="status tone-muted">Đã hủy</span></td><td><button class="btn btn-ghost btn-sm" data-demo>Cập nhật</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

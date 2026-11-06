@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thực đơn | LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">LuxDiamond</a>
+      <button class="menu-toggle" type="button">Menu</button>
+      <nav id="main-nav" class="nav">
+          <a href="index.html">Trang chủ</a>
+          <a href="thuc-don.html" class="active">Thực đơn</a>
+          <a href="dat-ban.html">Đặt bàn</a>
+          <a href="gioi-thieu.html">Giới thiệu</a>
+          <a href="lien-he.html">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn btn-ghost btn-sm">Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main>
+
+    <div class="section container">
+      <p class="eyebrow dark">Thực đơn</p>
+      <h1 class="page-title">Chọn món cho bữa ăn của ngài</h1>
+
+      
+      <div class="toolbar">
+        <div class="tabs">
+          <button type="button" class="on" data-cat="all">Tất cả</button>
+          <button type="button" data-cat="Khai vị">Khai vị</button>
+          <button type="button" data-cat="Món chính">Món chính</button>
+          <button type="button" data-cat="Tráng miệng">Tráng miệng</button>
+          <button type="button" data-cat="Đồ uống">Đồ uống</button>
+        </div>
+        <input type="search" id="tim-mon" class="search" placeholder="Tìm món theo tên hoặc mô tả">
+      </div>
+
+      <p id="khong-co" class="notice" style="display: none;">Không tìm thấy món phù hợp.</p>
+
+      <div class="grid">
+      <article class="dish-card" data-cat="Khai vị">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(47 22% 34%), hsl(87 28% 16%));"><span>S</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Khai vị</p>
+          <h3>Salad Caesar gà nướng</h3>
+          <p class="dish-desc">Xà lách romaine, gà nướng, phô mai Parmesan, bánh mì nướng giòn và sốt Caesar.</p>
+          <div class="dish-foot"><span class="price">135.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Khai vị">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(94 22% 34%), hsl(134 28% 16%));"><span>S</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Khai vị</p>
+          <h3>Súp nấm kem truffle</h3>
+          <p class="dish-desc">Súp nấm mịn mượt, thơm dầu truffle, dùng kèm bánh mì bơ tỏi.</p>
+          <div class="dish-foot"><span class="price">125.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Khai vị">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(141 22% 34%), hsl(181 28% 16%));"><span>B</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Khai vị</p>
+          <h3>Bruschetta cà chua húng quế</h3>
+          <p class="dish-desc">Bánh mì nướng, cà chua tươi, húng quế và dầu ô liu nguyên chất.</p>
+          <div class="dish-foot"><span class="price">115.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(188 22% 34%), hsl(228 28% 16%));"><span>B</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Bít tết thăn nội sốt tiêu xanh</h3>
+          <p class="dish-desc">Thăn nội bò áp chảo, sốt tiêu xanh, khoai nghiền và măng tây.</p>
+          <div class="dish-foot"><span class="price">485.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(235 22% 34%), hsl(275 28% 16%));"><span>C</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Cá hồi áp chảo sốt bơ chanh</h3>
+          <p class="dish-desc">Cá hồi da giòn, sốt bơ chanh, rau củ nướng.</p>
+          <div class="dish-foot"><span class="price">395.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(282 22% 34%), hsl(322 28% 16%));"><span>M</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Mì Ý hải sản sốt cà chua</h3>
+          <p class="dish-desc">Spaghetti cùng tôm, mực, nghêu trong sốt cà chua tỏi ớt.</p>
+          <div class="dish-foot"><span class="price">265.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(329 22% 34%), hsl(9 28% 16%));"><span>S</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Sườn heo nướng BBQ</h3>
+          <p class="dish-desc">Sườn heo nướng chậm, phủ sốt BBQ khói, dùng kèm khoai tây chiên.</p>
+          <div class="dish-foot"><span class="price">345.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card sold-out" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(16 22% 34%), hsl(56 28% 16%));"><span>R</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Risotto nấm porcini</h3>
+          <p class="dish-desc">Gạo Arborio nấu kem, nấm porcini và phô mai Parmesan.</p>
+          <div class="dish-foot"><span class="price">285.000 ₫</span><span class="tag-soldout">Tạm hết</span></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Món chính">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(63 22% 34%), hsl(103 28% 16%));"><span>G</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Món chính</p>
+          <h3>Gà nướng thảo mộc</h3>
+          <p class="dish-desc">Đùi gà nướng lò với thảo mộc, bơ tỏi và rau củ.</p>
+          <div class="dish-foot"><span class="price">255.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Tráng miệng">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(110 22% 34%), hsl(150 28% 16%));"><span>T</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Tráng miệng</p>
+          <h3>Tiramisu cổ điển</h3>
+          <p class="dish-desc">Bánh mềm thấm cà phê, kem mascarpone và bột cacao.</p>
+          <div class="dish-foot"><span class="price">115.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Tráng miệng">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(157 22% 34%), hsl(197 28% 16%));"><span>P</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Tráng miệng</p>
+          <h3>Panna cotta dâu</h3>
+          <p class="dish-desc">Kem sữa mịn mát, phủ sốt dâu tươi.</p>
+          <div class="dish-foot"><span class="price">105.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Tráng miệng">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(204 22% 34%), hsl(244 28% 16%));"><span>C</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Tráng miệng</p>
+          <h3>Crème brûlée vani</h3>
+          <p class="dish-desc">Kem trứng vani với lớp đường caramel giòn.</p>
+          <div class="dish-foot"><span class="price">110.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Đồ uống">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(251 22% 34%), hsl(291 28% 16%));"><span>V</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Đồ uống</p>
+          <h3>Vang đỏ (ly)</h3>
+          <p class="dish-desc">Một ly vang đỏ chọn theo món, hỏi nhân viên để được gợi ý.</p>
+          <div class="dish-foot"><span class="price">165.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Đồ uống">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(298 22% 34%), hsl(338 28% 16%));"><span>L</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Đồ uống</p>
+          <h3>Limonade bạc hà</h3>
+          <p class="dish-desc">Chanh tươi, bạc hà, soda mát lạnh.</p>
+          <div class="dish-foot"><span class="price">75.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      <article class="dish-card" data-cat="Đồ uống">
+        
+        <div class="dish-img dish-placeholder" style="background: linear-gradient(135deg, hsl(345 22% 34%), hsl(25 28% 16%));"><span>E</span></div>
+        <div class="dish-body">
+          <p class="dish-cat">Đồ uống</p>
+          <h3>Espresso</h3>
+          <p class="dish-desc">Cà phê espresso đậm, hậu ngọt.</p>
+          <div class="dish-foot"><span class="price">59.000 ₫</span><button class="btn btn-sm" data-demo>Thêm vào giỏ</button></div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="brand">LuxDiamond</p><p>Ẩm thực Tây đương đại</p></div>
+      <div><p class="footer-title">Ghé thăm</p><p>STU, Phường Chánh Hưng</p><p>Mỗi ngày 10:00 – 22:00</p></div>
+      <div><p class="footer-title">Liên hệ</p><p>0944886356</p><p>khanhvu2040@gmail.com</p><p><a href="admin/index.html" class="text-link light">Khu quản trị (giao diện mẫu)</a></p></div>
+    </div>
+    <p class="container copyright">© 2026 LuxDiamond. Đồ án thực tập chuyên ngành.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/thuc-don.js"></script>
+</body>
+</html>

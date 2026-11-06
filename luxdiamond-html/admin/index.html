@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tổng quan | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html" class="active">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Tổng quan</h1><p>Tình hình nhà hàng trong ngày.</p></div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat"><span>Doanh thu hôm nay</span><strong>16.200.000 ₫</strong></div>
+          <div class="stat"><span>Đơn hôm nay</span><strong>42</strong></div>
+          <div class="stat"><span>Đặt bàn hôm nay</span><strong>18</strong></div>
+          <div class="stat"><span>Bàn đang phục vụ</span><strong>3 / 8</strong></div>
+        </div>
+        <div class="admin-grid-2">
+          <div class="panel">
+            <h3>Doanh thu 7 ngày gần nhất</h3>
+            
+            <svg class="line-chart" viewBox="0 0 560 260" role="img" aria-label="Biểu đồ doanh thu 7 ngày"><line x1="44" x2="548" y1="232" y2="232" stroke="#e2d9c8" stroke-dasharray="3 3"/><text x="38" y="236" text-anchor="end" font-size="11" fill="#6b665c">0tr</text><line x1="44" x2="548" y1="178" y2="178" stroke="#e2d9c8" stroke-dasharray="3 3"/><text x="38" y="182" text-anchor="end" font-size="11" fill="#6b665c">5tr</text><line x1="44" x2="548" y1="123" y2="123" stroke="#e2d9c8" stroke-dasharray="3 3"/><text x="38" y="127" text-anchor="end" font-size="11" fill="#6b665c">10tr</text><line x1="44" x2="548" y1="68" y2="68" stroke="#e2d9c8" stroke-dasharray="3 3"/><text x="38" y="72" text-anchor="end" font-size="11" fill="#6b665c">15tr</text><line x1="44" x2="548" y1="14" y2="14" stroke="#e2d9c8" stroke-dasharray="3 3"/><text x="38" y="18" text-anchor="end" font-size="11" fill="#6b665c">20tr</text><text x="80" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T2</text><text x="152" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T3</text><text x="224" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T4</text><text x="296" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T5</text><text x="368" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T6</text><text x="440" y="252" text-anchor="middle" font-size="11" fill="#6b665c">T7</text><text x="512" y="252" text-anchor="middle" font-size="11" fill="#6b665c">CN</text><polyline fill="none" stroke="#b9975b" stroke-width="3" points="80,125 152,110 224,137 296,95 368,64 440,26 512,55"/><circle cx="80" cy="125" r="4" fill="#b9975b"><title>T2: 9.8 triệu</title></circle><circle cx="152" cy="110" r="4" fill="#b9975b"><title>T3: 11.2 triệu</title></circle><circle cx="224" cy="137" r="4" fill="#b9975b"><title>T4: 8.7 triệu</title></circle><circle cx="296" cy="95" r="4" fill="#b9975b"><title>T5: 12.6 triệu</title></circle><circle cx="368" cy="64" r="4" fill="#b9975b"><title>T6: 15.4 triệu</title></circle><circle cx="440" cy="26" r="4" fill="#b9975b"><title>T7: 18.9 triệu</title></circle><circle cx="512" cy="55" r="4" fill="#b9975b"><title>CN: 16.2 triệu</title></circle></svg>
+          </div>
+          <div class="panel">
+            <h3>Trạng thái bàn</h3>
+            <div class="mini-tables"><div class="mini-table s-Available"><strong>T01</strong><span>2 chỗ</span></div><div class="mini-table s-Occupied"><strong>T02</strong><span>2 chỗ</span></div><div class="mini-table s-Reserved"><strong>T03</strong><span>4 chỗ</span></div><div class="mini-table s-Occupied"><strong>T04</strong><span>4 chỗ</span></div><div class="mini-table s-Occupied"><strong>T05</strong><span>6 chỗ</span></div><div class="mini-table s-Reserved"><strong>T06</strong><span>4 chỗ</span></div><div class="mini-table s-Available"><strong>T07</strong><span>6 chỗ</span></div><div class="mini-table s-Available"><strong>T08</strong><span>10 chỗ</span></div></div>
+            <a href="ban.html" class="text-link">Quản lý bàn →</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Đơn hàng gần đây</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Mã đơn</th><th>Khách hàng</th><th>Bàn</th><th>Tổng tiền</th><th>Trạng thái</th></tr></thead>
+            <tbody>
+            <tr><td>OD-3041</td><td>Nguyễn Minh Anh</td><td>T05</td><td>1.150.000 ₫</td><td><span class="status tone-warn">Đang chế biến</span></td></tr>
+            <tr><td>OD-3040</td><td>Trần Quốc Bảo</td><td>T02</td><td>745.000 ₫</td><td><span class="status tone-info">Đã phục vụ</span></td></tr>
+            <tr><td>OD-3039</td><td>Lê Thu Hà</td><td>Mang về</td><td>520.000 ₫</td><td><span class="status tone-warn">Chờ xác nhận</span></td></tr>
+            <tr><td>OD-3037</td><td>Phạm Gia Huy</td><td>T04</td><td>1.380.000 ₫</td><td><span class="status tone-ok">Hoàn thành</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh mục | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html" class="active">Danh mục</a>
+        <a href="khach-hang.html">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Danh mục</h1><p>Nhóm món để khách dễ tìm trong thực đơn.</p></div>
+        </div>
+
+        <div class="admin-grid-2">
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Thứ tự</th><th>Tên danh mục</th><th>Số món</th><th></th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>Khai vị</td><td>3</td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>2</td><td>Món chính</td><td>6</td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>3</td><td>Tráng miệng</td><td>3</td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            <tr><td>4</td><td>Đồ uống</td><td>3</td><td><span class="row-actions"><button class="btn btn-ghost btn-sm" data-demo>Sửa</button><button class="btn btn-ghost btn-sm" data-demo>Xóa</button></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+          <form class="panel form-card demo-form">
+            <h3>Thêm danh mục</h3>
+            <label class="field"><span>Tên danh mục</span><input></label>
+            <label class="field"><span>Mô tả</span><textarea rows="3"></textarea></label>
+            <label class="field"><span>Thứ tự hiển thị</span><input type="number" min="1"></label>
+            <button class="btn" type="submit">Lưu danh mục</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

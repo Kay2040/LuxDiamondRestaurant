@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khách hàng | Quản trị LuxDiamond</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+<div class="admin">
+
+  
+  <aside class="admin-side">
+    <a href="index.html" class="brand">LuxDiamond</a>
+    <p class="admin-role">Khu quản trị</p>
+    <nav>
+        <a href="index.html">Tổng quan</a>
+        <a href="don-hang.html">Đơn hàng</a>
+        <a href="dat-ban.html">Đặt bàn</a>
+        <a href="ban.html">Quản lý bàn</a>
+        <a href="mon-an.html">Món ăn</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="khach-hang.html" class="active">Khách hàng</a>
+        <a href="nhan-vien.html">Nhân viên</a>
+        <a href="doanh-thu.html">Doanh thu</a>
+    </nav>
+    <a href="../index.html" class="admin-back">← Về website khách hàng</a>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="menu-toggle" type="button">Menu</button>
+      <span class="demo-chip">Giao diện mẫu · dữ liệu minh họa</span>
+      <span class="admin-user">Quản trị viên</span>
+    </header>
+
+    <div class="admin-content">
+      <section class="admin-section">
+        <div class="admin-head">
+          <div><h1>Khách hàng</h1><p>Danh sách tài khoản khách hàng.</p></div>
+        </div>
+
+        <div class="toolbar"><input type="search" class="search" placeholder="Tìm theo tên, email, điện thoại"></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Họ tên</th><th>Email</th><th>Điện thoại</th><th>Số đơn</th><th>Tổng chi tiêu</th><th>Ngày tham gia</th><th></th></tr></thead>
+            <tbody>
+            <tr><td>Nguyễn Minh Anh</td><td>minhanh@example.com</td><td>0901 234 567</td><td>12</td><td>9.450.000 ₫</td><td>12/03/2026</td><td><button class="btn btn-ghost btn-sm" data-demo>Khóa tài khoản</button></td></tr>
+            <tr><td>Trần Quốc Bảo</td><td>quocbao@example.com</td><td>0912 345 678</td><td>7</td><td>5.120.000 ₫</td><td>28/04/2026</td><td><button class="btn btn-ghost btn-sm" data-demo>Khóa tài khoản</button></td></tr>
+            <tr><td>Lê Thu Hà</td><td>thuha@example.com</td><td>0933 456 789</td><td>4</td><td>2.680.000 ₫</td><td>09/06/2026</td><td><button class="btn btn-ghost btn-sm" data-demo>Khóa tài khoản</button></td></tr>
+            <tr><td>Phạm Gia Huy</td><td>giahuy@example.com</td><td>0944 567 890</td><td>15</td><td>12.870.000 ₫</td><td>21/01/2026</td><td><button class="btn btn-ghost btn-sm" data-demo>Khóa tài khoản</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
