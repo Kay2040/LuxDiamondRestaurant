@@ -90,16 +90,6 @@ document.querySelectorAll('.pick').forEach(function (nut) {
 });
 
 
-document.querySelectorAll('.choice').forEach(function (nut) {
-  nut.addEventListener('click', function () {
-    document.querySelectorAll('.choice').forEach(function (n) { n.classList.remove('on'); });
-    nut.classList.add('on');
-    cachChonMon = nut.dataset.cach;
-    document.getElementById('danh-sach-mon').style.display = (cachChonMon === 'menu') ? 'flex' : 'none';
-  });
-});
-
-
 
 // Bước 3: xác nhận
 function taoTomTat() {

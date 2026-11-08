@@ -8,23 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand">LuxDiamond</a>
+      <a href="../../index.html" class="brand">LuxDiamond</a>
       <button class="menu-toggle" type="button">Menu</button>
       <nav id="main-nav" class="nav">
-          <a href="../index.html">Trang chủ</a>
+          <a href="../../index.html">Trang chủ</a>
           <a href="thuc-don.html">Thực đơn</a>
           <a href="dat-ban.html" class="active">Đặt bàn</a>
           <a href="gioi-thieu.html">Giới thiệu</a>
           <a href="lien-he.html">Liên hệ</a>
       </nav>
       <div class="header-actions">
+        <a href="don-mon.html" class="don-link">Đơn món<span class="badge" id="so-mon">0</span></a>
         <a href="dang-nhap.html" class="btn btn-ghost btn-sm">Đăng nhập</a>
       </div>
     </div>
@@ -103,28 +104,28 @@
             <div class="chips"><button type="button" class="on" data-kv="all">Tất cả</button><button type="button" data-kv="Trong nhà">Trong nhà</button><button type="button" data-kv="Sân vườn">Sân vườn</button><button type="button" data-kv="Phòng riêng">Phòng riêng</button></div>
             <div class="table-pick">
           <button type="button" class="pick" data-ten="T01" data-cho="2" data-kv="Trong nhà" data-da-dat="0">
-            <strong>T01</strong><span>2 chỗ · Trong nhà</span><small>Còn trống</small>
+            <strong>TB1</strong><span>2 chỗ · Trong nhà</span><small>Còn trống</small>
           </button>
           <button type="button" class="pick" data-ten="T02" data-cho="2" data-kv="Trong nhà" data-da-dat="0">
-            <strong>T02</strong><span>2 chỗ · Trong nhà</span><small>Còn trống</small>
+            <strong>TB2</strong><span>2 chỗ · Trong nhà</span><small>Còn trống</small>
           </button>
           <button type="button" class="pick" data-ten="T03" data-cho="4" data-kv="Trong nhà" data-da-dat="1" disabled>
-            <strong>T03</strong><span>4 chỗ · Trong nhà</span><small>Đã có người đặt</small>
+            <strong>TB3</strong><span>4 chỗ · Trong nhà</span><small>Đã có người đặt</small>
           </button>
           <button type="button" class="pick" data-ten="T04" data-cho="4" data-kv="Trong nhà" data-da-dat="0">
-            <strong>T04</strong><span>4 chỗ · Trong nhà</span><small>Còn trống</small>
+            <strong>TB4</strong><span>4 chỗ · Trong nhà</span><small>Còn trống</small>
           </button>
           <button type="button" class="pick" data-ten="T05" data-cho="6" data-kv="Trong nhà" data-da-dat="1" disabled>
-            <strong>T05</strong><span>6 chỗ · Trong nhà</span><small>Đã có người đặt</small>
+            <strong>TB5</strong><span>6 chỗ · Trong nhà</span><small>Đã có người đặt</small>
           </button>
           <button type="button" class="pick" data-ten="T06" data-cho="4" data-kv="Sân vườn" data-da-dat="1" disabled>
-            <strong>T06</strong><span>4 chỗ · Sân vườn</span><small>Đã có người đặt</small>
+            <strong>TB6</strong><span>4 chỗ · Sân vườn</span><small>Đã có người đặt</small>
           </button>
           <button type="button" class="pick" data-ten="T07" data-cho="6" data-kv="Sân vườn" data-da-dat="0">
-            <strong>T07</strong><span>6 chỗ · Sân vườn</span><small>Còn trống</small>
+            <strong>TB7</strong><span>6 chỗ · Sân vườn</span><small>Còn trống</small>
           </button>
           <button type="button" class="pick" data-ten="T08" data-cho="10" data-kv="Phòng riêng" data-da-dat="0">
-            <strong>T08</strong><span>10 chỗ · Phòng riêng</span><small>Còn trống</small>
+            <strong>TB8</strong><span>10 chỗ · Phòng riêng</span><small>Còn trống</small>
           </button>
             </div>
             <div class="wizard-nav">
@@ -180,12 +181,12 @@
     <div class="container footer-grid">
       <div><p class="brand">LuxDiamond</p><p>Ẩm thực Tây đương đại</p></div>
       <div><p class="footer-title">Ghé thăm</p><p>STU, Phường Chánh Hưng</p><p>Mỗi ngày 10:00 – 22:00</p></div>
-      <div><p class="footer-title">Liên hệ</p><p>0944886356</p><p>khanhvu2040@gmail.com</p><p><a href="admin/index.html" class="text-link light">Khu quản trị (giao diện mẫu)</a></p></div>
+      <div><p class="footer-title">Liên hệ</p><p>0944886356</p><p>khanhvu2040@gmail.com</p><p><a href="../admin/index.html" class="text-link light">Khu quản trị (giao diện mẫu)</a></p></div>
     </div>
     <p class="container copyright">© 2026 LuxDiamond. Đồ án thực tập chuyên ngành.</p>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/dat-ban.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/dat-ban.js"></script>
 </body>
 </html>
